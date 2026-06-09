@@ -18,7 +18,7 @@ function SettingCard({ title, children }) {
   );
 }
 
-const BACKEND_URL = 'http://192.168.43.63:8000';
+import { BACKEND_URL } from '../../config';
 
 export default function SettingsScreen() {
   const [name, setName] = useState('You');

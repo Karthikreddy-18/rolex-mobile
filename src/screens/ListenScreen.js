@@ -9,10 +9,10 @@ import AnimatedMic from '../components/AnimatedMic';
 import SurrealWaveform from '../components/SurrealWaveform';
 import ParticleField from '../components/ParticleField';
 import useSpeak from '../hooks/useSpeak';
+import { BACKEND_URL } from '../../config';
 
 const { width } = Dimensions.get('window');
 const STATES = { IDLE: 'idle', LISTENING: 'listening', PROCESSING: 'processing', SPEAKING: 'speaking' };
-const BACKEND_URL = 'http://192.168.43.63:8000';
 
 const COMMANDS = [
   { icon: 'musical-notes', label: 'Play music' },

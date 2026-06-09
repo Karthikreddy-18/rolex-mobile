@@ -6,8 +6,7 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import useSpeak from '../hooks/useSpeak';
-
-const BACKEND_URL = 'http://192.168.43.63:8000';
+import { BACKEND_URL } from '../../config';
 
 const WELCOME = [
   { id: 'welcome', text: "Hello! I'm Rolex. Ask me anything — I'm here to help.", sender: 'rolex' },
