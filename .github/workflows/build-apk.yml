@@ -39,8 +39,11 @@ jobs:
       - name: Build debug APK
         run: cd android && ./gradlew assembleDebug --build-cache --parallel
 
+      - name: Find APK
+        run: find . -name "*.apk" -type f
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: rolex-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: android/app/build/outputs/apk/debug/*.apk
